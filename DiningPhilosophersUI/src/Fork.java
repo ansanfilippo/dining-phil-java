@@ -22,9 +22,10 @@ public class Fork {
         } else {
             while (holder != null) {
                 Thread.sleep(0);
+
+                holder = phil;
             }
         }
-        holder = phil;
     }
 
     public void CleanFork() {

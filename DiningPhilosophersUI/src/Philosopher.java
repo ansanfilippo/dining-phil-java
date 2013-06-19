@@ -60,6 +60,7 @@ public class Philosopher implements Runnable {
                 }
 
                 Thread.sleep((int) (1000 * Math.random() * pDelay));
+                
                 if (rightF.holder != this) {
                     jta.append("Philosopher " + Integer.toString(philID) + " has requested fork " + Integer.toString(rightF.forkID) + newline);
                     rightF.RequestFork(this);
